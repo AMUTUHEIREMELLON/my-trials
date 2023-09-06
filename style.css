@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 227, 193);
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px); /* Adjust the size as needed */
+    grid-template-rows: repeat(8, 50px); /* Adjust the size as needed */
+}
+
+.chessboard div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.chessboard .even {
+    background-color: white; /* Light square color */
+}
+
+.chessboard .odd {
+    background-color: black; /* Dark square color */
+}
+
+/* Style for chess pieces can be added here */
